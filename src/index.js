@@ -16,7 +16,6 @@ app.use(bodyParser.json());
 //Para que entenda quando parametros forem passados via url
 app.use(bodyParser.urlencoded({ extended: false }));
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 
 app.listen(3000);
